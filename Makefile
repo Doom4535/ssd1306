@@ -40,7 +40,7 @@ check:
 	@cppcheck --force \
 	    --enable=warning,style,performance,portability \
 	    --suppress=information \
-	    -q -I ./src \
+	    -I ./src \
 	    --error-exitcode=1 .
 	@echo "[DONE]"
 
